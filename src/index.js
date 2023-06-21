@@ -1,10 +1,12 @@
-console.log('hi');
+import './style.css'
+
 const page = document.getElementById('content')
 
-const test = () => {
+const test = (a) =>{
     const tester = document.createElement('div')
-    tester.innerText = 'test'
-    return tester;
+    tester.classList.add('message')
+    tester.innerText = a;
+    return tester
 }
 
-page.appendChild(test());
+page.appendChild(test('Hey now!'))
