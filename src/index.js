@@ -1,7 +1,7 @@
 import './style.css';
 import Heart from './images/heart-outline.svg';
 
-const page = document.getElementById('content');
+let page = document.getElementById('content');
 
 const test = (a) =>{
     const tester = document.createElement('div')
@@ -15,3 +15,7 @@ const test = (a) =>{
 };
 
 page.appendChild(test('Hey now!'));
+
+let me = 'you';
+
+console.log(me)
