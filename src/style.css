@@ -5,8 +5,14 @@
 
 body {
     margin: 0;
+
 }
 
+#content {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 4fr 30fr 2fr;
+}
 
 #header {
     color: red;
