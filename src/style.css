@@ -5,12 +5,12 @@
 
 body {
     margin: 0;
-
 }
 
 #content {
     display: grid;
     height: 100vh;
+    max-height: 100vh;
     grid-template-rows: 4fr 28fr 2fr;
 }
 
@@ -24,7 +24,8 @@ body {
 }
 
 #main {
-    border: solid 1px rgb(0, 255, 76);
+    display: flex;
+    flex-direction: column;
 }
  
 #footer {
@@ -32,5 +33,38 @@ body {
 }
 
 #home {
-    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    height: 100%;
+}
+
+#cover {
+    display: flex;
+    
+}
+
+#coverImg {
+    width: clamp(650px, 55vw, 70vw);
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+
+#adress {
+    display: block;
+}
+
+#schedule {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px 20px
+}
+
+.day {
+    text-align: right;
 }

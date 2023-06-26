@@ -54,6 +54,7 @@ const createFooter = () => {
 const setMain = () => {
   const main = document.getElementById('main');
   const navBtn = document.querySelectorAll('.navBtn');
+  main.appendChild(createHome());
 
   navBtn.forEach((btn) => {
     btn.addEventListener('click', (e) => {
