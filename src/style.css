@@ -1,3 +1,8 @@
+:root {
+    --blue-theme: rgb(95, 113, 173);
+    --tan-theme: rgb(255, 244, 231);
+}
+
 @font-face {
     font-family: 'Robots';
     src: url('./fonts/Roboto-Medium.ttf');
@@ -43,7 +48,7 @@ body {
     display: flex;
     align-items: center;
     font-family: 'fancy';
-    color: rgb(97, 98, 167);
+    color: var(--blue-theme);
     font-size: 80px;
     font-weight: bold
 }
@@ -64,8 +69,8 @@ body {
 }
 
 .navBtn:hover {
-    background-color: rgb(255, 247, 238);
-    box-shadow: 0px 0px 20px 20px rgb(255, 247, 238);
+    background-color: var(--tan-theme);
+    box-shadow: 0px 0px 20px 20px var(--tan-theme);
 }
 
 #main {
@@ -74,7 +79,8 @@ body {
 }
  
 #footer {
-    border: solid 1px rgb(234, 0, 255);
+    background-color: var(--blue-theme);
+    box-shadow: 0px 0px 3px 3px var(--blue-theme)
 }
 
 /* HOME MODULE STYLE */

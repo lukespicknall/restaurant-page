@@ -58,7 +58,7 @@ const createMain = () => {
 // Create Footer div and append it to content
 const createFooter = () => {
   const footer = document.createElement('div');
-  footer.textContent = 'foot';
+  footer.textContent = '';
   footer.setAttribute('id', 'footer');
   content.appendChild(footer);
 };
