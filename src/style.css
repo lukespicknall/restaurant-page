@@ -2,6 +2,18 @@
     font-family: 'Robots';
     src: url('./fonts/Roboto-Medium.ttf');
 }
+@font-face {
+    font-family: 'fancy';
+    src: url('./fonts/Cherolina.ttf');
+}
+@font-face {
+    font-family: 'info1';
+    src: url('./fonts/Louis\ George\ Cafe.ttf');
+}
+@font-face {
+    font-family: 'info2';
+    src: url('./fonts/Louis\ George\ Cafe\ Light.ttf');
+}
 
 body {
     margin: 0;
@@ -9,18 +21,51 @@ body {
 
 #content {
     display: grid;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
     grid-template-rows: 4fr 28fr 2fr;
 }
 
 #header {
     display: flex;
-    color: red;
-    font-family: 'Robots';
-    font-size: 50px;
-    border: solid 1px blue;
+    justify-content: center;
+    max-height: 93px;
+}
 
+#headerBox {
+    display: flex;
+    width: clamp(650px, 55vw, 1032px);
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10px 0 10px;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    font-family: 'fancy';
+    color: rgb(97, 98, 167);
+    font-size: 80px;
+    font-weight: bold
+}
+
+#nav {
+    display: flex;
+    gap: 25px;
+    height: 25px;
+}
+
+.navBtn {
+    font-family: 'info2';
+    font-size: 25px;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: ease-in-out .3s;
+}
+
+.navBtn:hover {
+    background-color: rgb(255, 247, 238);
+    box-shadow: 0px 0px 20px 20px rgb(255, 247, 238);
 }
 
 #main {
@@ -32,6 +77,7 @@ body {
     border: solid 1px rgb(234, 0, 255);
 }
 
+/* HOME MODULE STYLE */
 #home {
     display: flex;
     flex-direction: column;
@@ -45,24 +91,29 @@ body {
 }
 
 #coverImg {
-    width: clamp(650px, 55vw, 70vw);
+    width: clamp(650px, 55vw, 1032px);
 }
 
 #info{
+    font-family: 'info1';
+    font-weight: lighter;
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
     justify-content: center;
+    margin: 20px 0 20px 0;
 }
 
-#adress {
+#address {
     display: block;
+    font-size: 18px;
+    margin-bottom: 20px;
 }
 
 #schedule {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 10px 20px
+    gap: 6px 20px
 }
 
 .day {

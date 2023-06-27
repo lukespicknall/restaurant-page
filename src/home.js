@@ -17,7 +17,7 @@ const createInfo = () => {
   info.setAttribute('id', 'info');
   address.setAttribute('id', 'address');
   schedule.setAttribute('id', 'schedule');
-  address.textContent = '2132 Ayrsley Town Blvd, Charlotte, NC';
+  address.textContent = '2132 AYRSLEY TOWN BLVD, CHARLOTTE, NC';
   for (let i = 0; i < 7; i += 1) {
     const day = document.createElement('div');
     const hours = document.createElement('div');
@@ -25,32 +25,32 @@ const createInfo = () => {
     hours.classList.add('hour');
     switch (i) {
       case 0:
-        day.textContent = 'MON';
+        day.textContent = 'M O N';
         hours.textContent = '5 - 11 P';
         break;
       case 1:
-        day.textContent = 'TUES';
+        day.textContent = 'T U E S';
         hours.textContent = '5 - 11 P';
         break;
       case 2:
-        day.textContent = 'WEDS';
+        day.textContent = 'W E D S';
         hours.textContent = '5 - 11 P';
         break;
       case 3:
-        day.textContent = 'THURS';
+        day.textContent = 'T H U R S';
         hours.textContent = '5 - 11 P';
         break;
       case 4:
-        day.textContent = 'FRI';
+        day.textContent = 'F R I';
         hours.textContent = '5 - 11 P';
         break;
       case 5:
-        day.textContent = 'SAT';
+        day.textContent = 'S A T';
         hours.textContent = '5 - 11 P';
         break;
       case 6:
-        day.textContent = 'SUN';
-        hours.textContent = 'CLOSED';
+        day.textContent = 'S U N';
+        hours.textContent = 'C L O S E D';
         break;
       default:
         day.textContent = 'MON-SAT';

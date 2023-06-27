@@ -8,15 +8,25 @@ const content = document.getElementById('content');
 // Create Header div and append it to content
 const createHeader = () => {
   const header = document.createElement('div');
-  header.textContent = 'head';
+  const headerBox = document.createElement('div');
   header.setAttribute('id', 'header');
+  headerBox.setAttribute('id', 'headerBox');
+  header.appendChild(headerBox);
   content.appendChild(header);
   return header;
 };
 
+const createLogo = () => {
+  const headBox = document.getElementById('headerBox');
+  const logo = document.createElement('div');
+  logo.textContent = 'Aterma';
+  logo.setAttribute('id', 'logo');
+  headBox.appendChild(logo);
+};
+
 // Create Nav section of header and it's buttons, assign attributes, append
 const createNav = () => {
-  const head = document.getElementById('header');
+  const headBox = document.getElementById('headerBox');
   const nav = document.createElement('div');
   const home = document.createElement('button');
   const menu = document.createElement('button');
@@ -28,10 +38,13 @@ const createNav = () => {
   home.classList.add('navBtn');
   menu.classList.add('navBtn');
   contact.classList.add('navBtn');
+  home.textContent = 'HOME';
+  menu.textContent = 'MENU';
+  contact.textContent = 'CONTACT';
   nav.appendChild(home);
   nav.appendChild(menu);
   nav.appendChild(contact);
-  head.appendChild(nav);
+  headBox.appendChild(nav);
 };
 
 // Create Main div and append it to content
@@ -82,6 +95,7 @@ const load = () => {
   createHeader();
   createMain();
   createFooter();
+  createLogo();
   createNav();
   setMain();
 };
