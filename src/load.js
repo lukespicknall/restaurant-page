@@ -1,6 +1,10 @@
 import createHome from './home';
 import createMenu from './menu';
 import createContact from './contact';
+import ghIcon from './images/github.svg';
+import instaIcon from './images/instagram.svg';
+import mailIcon from './images/email-outline.svg';
+import mapsIcon from './images/google-maps.svg';
 
 // Pull our HTML tag into js
 const content = document.getElementById('content');
@@ -57,9 +61,39 @@ const createMain = () => {
 
 // Create Footer div and append it to content
 const createFooter = () => {
+  const gitHub = document.createElement('div');
+  const socials = document.createElement('div');
+  gitHub.setAttribute('id', 'gitHub');
+  socials.setAttribute('id', 'socials');
+
+  const ghLink = new Image();
+  ghLink.src = ghIcon;
+  ghLink.classList.add('footLink');
+  ghLink.setAttribute('path', 'currentColor');
+  gitHub.appendChild(ghLink);
+
+  const instaLink = new Image();
+  instaLink.src = instaIcon;
+  instaLink.classList.add('footLink');
+  instaLink.setAttribute('path', 'fill=currentColor');
+  socials.appendChild(instaLink);
+
+  const mailLink = new Image();
+  mailLink.src = mailIcon;
+  mailLink.classList.add('footLink');
+  mailLink.setAttribute('path', 'currentColor');
+  socials.appendChild(mailLink);
+
+  const mapLink = new Image();
+  mapLink.src = mapsIcon;
+  mapLink.classList.add('footLink');
+  mapLink.setAttribute('path', 'currentColor');
+  socials.appendChild(mapLink);
+
   const footer = document.createElement('div');
-  footer.textContent = '';
   footer.setAttribute('id', 'footer');
+  footer.appendChild(gitHub);
+  footer.appendChild(socials);
   content.appendChild(footer);
 };
 

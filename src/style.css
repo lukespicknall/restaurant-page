@@ -65,7 +65,8 @@ body {
     border: none;
     border-radius: 25px;
     background-color: transparent;
-    transition: ease-in-out .3s;
+    transition: ease-out .3s;
+    cursor: pointer;
 }
 
 .navBtn:hover {
@@ -79,9 +80,36 @@ body {
 }
  
 #footer {
+    display: flex;
+    justify-content: space-between;
     background-color: var(--blue-theme);
-    box-shadow: 0px 0px 3px 3px var(--blue-theme)
+    box-shadow: 0px 0px 3px 3px var(--blue-theme);
+    max-height: 46.5px;
+    padding: 0 30px 0 30px;
 }
+
+#gitHub {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+#socials {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 100%
+}
+
+.footLink {
+    height: 80%;
+    color: aqua;
+}
+/* #ghLink {
+    all: unset;
+    height: 100%;
+    color: aqua;
+} */
 
 /* HOME MODULE STYLE */
 #home {
