@@ -82,8 +82,8 @@ body {
 #footer {
     display: flex;
     justify-content: space-between;
-    background-color: var(--blue-theme);
-    box-shadow: 0px 0px 3px 3px var(--blue-theme);
+    /* background-color: var(--blue-theme);
+    box-shadow: 0px 0px 3px 3px var(--blue-theme); */
     max-height: 46.5px;
     padding: 0 30px 0 30px;
 }
@@ -103,7 +103,7 @@ body {
 
 .footLink {
     height: 80%;
-    color: aqua;
+    color: rgb(127, 175, 175);
 }
 /* #ghLink {
     all: unset;
