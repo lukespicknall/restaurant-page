@@ -32,6 +32,9 @@ const createWall = () => {
 };
 
 const createInfo = () => {
+  const infoLogo = document.createElement('div');
+  infoLogo.textContent = 'Aterma';
+  infoLogo.setAttribute('id', 'infoLogo');
   const info = document.createElement('div');
   const address = document.createElement('div');
   const schedule = document.createElement('div');
@@ -81,6 +84,7 @@ const createInfo = () => {
     schedule.appendChild(day);
     schedule.appendChild(hours);
   }
+  info.appendChild(infoLogo);
   info.appendChild(address);
   info.appendChild(schedule);
   return info;
