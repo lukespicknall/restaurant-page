@@ -38,7 +38,7 @@ const createInfo = () => {
   info.setAttribute('id', 'info');
   address.setAttribute('id', 'address');
   schedule.setAttribute('id', 'schedule');
-  address.textContent = '2132 AYRSLEY TOWN BLVD, CHARLOTTE, NC';
+  address.textContent = 'BEEKHUIZENSEWEG 1, 6991 JM RHEDEN, NETHERLANDS';
   for (let i = 0; i < 7; i += 1) {
     const day = document.createElement('div');
     const hours = document.createElement('div');
