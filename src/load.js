@@ -80,7 +80,7 @@ const createFooter = () => {
   instaLink.setAttribute('aria-hidden', 'true');
   const instaShell = document.createElement('a');
   instaShell.setAttribute('target', 'blank');
-  instaShell.href = 'https://github.com/lukespicknall/restaurant-page';
+  instaShell.href = 'https://www.instagram.com/explore/locations/242937426/veluwezoom-national-park/';
   instaShell.appendChild(instaLink);
   socials.appendChild(instaShell);
 

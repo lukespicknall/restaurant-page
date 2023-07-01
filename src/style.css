@@ -29,7 +29,7 @@ body {
 #content {
     display: grid;
     min-height: 100vh;
-    grid-template-rows: 4fr 28fr 2fr;
+    grid-template-rows: 93px 1fr 46.5px;
 }
 
 #header {
@@ -104,6 +104,7 @@ body {
 .fa-foot {
     color: var(--blue-theme);
     font-size: 35px;
+    border-radius: 25px;
     transition: ease-out .3s;
 }
 
@@ -130,6 +131,36 @@ body {
     width: clamp(650px, 55vw, 1032px);
 }
 
+#welcome {
+    display: block;
+    margin: 35px 0 35px 0;
+}
+
+.welcome-text {
+    font-family: 'info2';
+    font-size: 20px;
+    max-width: 650px;
+    text-align: center;
+    border-radius: 25px;
+    background-color: transparent;
+    transition: ease-out .3s;
+}
+
+.welcome-text:hover {
+    background-color: var(--tan-theme);
+    box-shadow: 0px 0px 20px 20px var(--tan-theme);
+}
+
+#wall {
+    max-width: 100vw;
+    min-width: 770px;
+}
+
+#wallImg {
+    max-width: 100vw;
+        min-width: 770px;
+}
+
 #info{
     font-family: 'info1';
     font-weight: lighter;
@@ -137,7 +168,7 @@ body {
     flex-direction: column;
     flex: 1 1 auto;
     justify-content: center;
-    margin: 20px 0 20px 0;
+    margin: 35px 0 35px 0;
 }
 
 #address {
