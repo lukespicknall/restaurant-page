@@ -1,10 +1,10 @@
 import createHome from './home';
 import createMenu from './menu';
 import createContact from './contact';
-import ghIcon from './images/github.svg';
-import instaIcon from './images/instagram.svg';
-import mailIcon from './images/email-outline.svg';
-import mapsIcon from './images/google-maps.svg';
+// import ghIcon from './images/github.svg';
+// import instaIcon from './images/instagram.svg';
+// import mailIcon from './images/email-outline.svg';
+// import mapsIcon from './images/google-maps.svg';
 
 // Pull our HTML tag into js
 // const content = document.createElement('div');
@@ -63,49 +63,44 @@ const createMain = () => {
 
 // Create Footer div and append it to content
 const createFooter = () => {
-  const gitHub = document.createElement('div');
+  const gitHub = document.createElement('a');
   const socials = document.createElement('div');
   gitHub.setAttribute('id', 'gitHub');
+  gitHub.setAttribute('target', 'blank');
+  gitHub.href = 'https://github.com/lukespicknall/restaurant-page';
   socials.setAttribute('id', 'socials');
 
-  // const gitSvg = document.createElement('svg');
-  // let test = new SVG
-  // gitSvg.appendChild(test);
-  // const gitPath = document.createElement('path');
-  // gitPath.setAttribute('fill', 'currentColor');
-  // gitSvg.setAttribute('xmlns', 'http://www.w3.org/2000/svg');
-  // gitSvg.setAttribute('viewBox', '0 0 24 24');
-  // gitSvg.classList.add('footLink');
-  // gitPath.setAttribute(
-  //   'd',
-  //   'M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z'
-  // );
-  // gitSvg.appendChild(gitPath);
-  // gitHub.appendChild(gitSvg);
-
-  const ghLink = new Image();
-  ghLink.src = ghIcon;
-  ghLink.classList.add('footLink');
-  ghLink.setAttribute('path', 'currentColor');
+  const ghLink = document.createElement('i');
+  ghLink.classList.add('fa', 'fa-github', 'fa-foot');
+  ghLink.setAttribute('aria-hidden', 'true');
   gitHub.appendChild(ghLink);
 
-  const instaLink = new Image();
-  instaLink.src = instaIcon;
-  instaLink.classList.add('footLink');
-  // instaLink.setAttribute('path', 'fill=currentColor');
-  socials.appendChild(instaLink);
+  const instaLink = document.createElement('i');
+  instaLink.classList.add('fa-brands', 'fa-instagram', 'fa-foot');
+  instaLink.setAttribute('aria-hidden', 'true');
+  const instaShell = document.createElement('a');
+  instaShell.setAttribute('target', 'blank');
+  instaShell.href = 'https://github.com/lukespicknall/restaurant-page';
+  instaShell.appendChild(instaLink);
+  socials.appendChild(instaShell);
 
-  const mailLink = new Image();
-  mailLink.src = mailIcon;
-  mailLink.classList.add('footLink');
-  // mailLink.setAttribute('path', 'currentColor');
-  socials.appendChild(mailLink);
+  const mailLink = document.createElement('i');
+  mailLink.classList.add('fa-regular', 'fa-envelope', 'fa-foot');
+  mailLink.setAttribute('aria-hidden', 'true');
+  const mailShell = document.createElement('a');
+  mailShell.setAttribute('target', 'blank');
+  mailShell.href = 'https://github.com/lukespicknall/restaurant-page';
+  mailShell.appendChild(mailLink);
+  socials.appendChild(mailShell);
 
-  const mapLink = new Image();
-  mapLink.src = mapsIcon;
-  mapLink.classList.add('footLink');
-  mapLink.setAttribute('path', 'currentColor');
-  socials.appendChild(mapLink);
+  const mapLink = document.createElement('i');
+  mapLink.classList.add('fa', 'fa-location-dot', 'fa-foot');
+  mapLink.setAttribute('aria-regular', 'true');
+  const mapShell = document.createElement('a');
+  mapShell.setAttribute('target', 'blank');
+  mapShell.href = 'https://github.com/lukespicknall/restaurant-page';
+  mapShell.appendChild(mapLink);
+  socials.appendChild(mapShell);
 
   const footer = document.createElement('div');
   footer.setAttribute('id', 'footer');

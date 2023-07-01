@@ -1,6 +1,7 @@
 :root {
     --blue-theme: rgb(95, 113, 173);
-    --tan-theme: rgb(255, 244, 231);
+    --tan-theme: rgb(255, 235, 213);
+    --rose-theme: rgb(255, 209, 200);
 }
 
 @font-face {
@@ -22,6 +23,7 @@
 
 body {
     margin: 0;
+    background-color: #faf7f3;
 }
 
 #content {
@@ -82,34 +84,33 @@ body {
 #footer {
     display: flex;
     justify-content: space-between;
-    /* background-color: var(--blue-theme);
-    box-shadow: 0px 0px 3px 3px var(--blue-theme); */
     max-height: 46.5px;
-    padding: 0 30px 0 30px;
+    padding: 0 60px 0 60px;
 }
 
 #gitHub {
     display: flex;
-    align-items: center;
     height: 100%;
+    text-decoration: none;
 }
 
 #socials {
     display: flex;
-    align-items: center;
-    gap: 20px;
+    gap: 30px;
     height: 100%
 }
 
-.footLink {
-    height: 80%;
-    color: rgb(127, 175, 175);
+.fa-foot {
+    color: var(--blue-theme);
+    font-size: 35px;
+    transition: ease-out .3s;
 }
-/* #ghLink {
-    all: unset;
-    height: 100%;
-    color: aqua;
-} */
+
+.fa-foot:hover {
+    background-color: var(--tan-theme);
+    box-shadow: 0px 0px 20px 20px var(--tan-theme);
+}
+
 
 /* HOME MODULE STYLE */
 #home {
