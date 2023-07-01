@@ -98,7 +98,7 @@ const createFooter = () => {
   mapLink.setAttribute('aria-regular', 'true');
   const mapShell = document.createElement('a');
   mapShell.setAttribute('target', 'blank');
-  mapShell.href = 'https://github.com/lukespicknall/restaurant-page';
+  mapShell.href = 'https://www.google.com/maps/place/Nationaal+Park+Veluwezoom/@52.0483103,6.0176982,17z/data=!3m1!4b1!4m6!3m5!1s0x47c7bcc9278a0a47:0x46a1476b7999402f!8m2!3d52.0483103!4d6.0198869!16s%2Fm%2F05m_gqg?entry=ttu';
   mapShell.appendChild(mapLink);
   socials.appendChild(mapShell);
 

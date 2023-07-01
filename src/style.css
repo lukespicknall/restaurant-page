@@ -1,7 +1,7 @@
 :root {
     --blue-theme: rgb(95, 113, 173);
-    --tan-theme: rgb(255, 235, 213);
-    --rose-theme: rgb(255, 209, 200);
+    --tan-theme: rgb(255, 242, 227);
+    --rose-theme: rgb(253, 235, 214);
 }
 
 @font-face {
@@ -85,6 +85,7 @@ body {
     display: flex;
     justify-content: space-between;
     max-height: 46.5px;
+    min-width: 650px;
     padding: 0 60px 0 60px;
 }
 
@@ -107,8 +108,8 @@ body {
 }
 
 .fa-foot:hover {
-    background-color: var(--tan-theme);
-    box-shadow: 0px 0px 20px 20px var(--tan-theme);
+    background-color: var(--rose-theme);
+    box-shadow: 0px 0px 20px 20px var(--rose-theme);
 }
 
 
