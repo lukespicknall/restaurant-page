@@ -16,7 +16,7 @@ const createWelcome = () => {
   welcome.setAttribute('id', 'welcome');
   const welcomeText = document.createElement('p');
   welcomeText.classList.add('welcome-text');
-  welcomeText.textContent = 'Nestled in rolling hills and cradled by ancient wood and billowing lavender, Aterma is a nice place to have lunch. Join us for a lovely day on the grass with a picnic package of your choice. And bring any extras or compliments you like!';
+  welcomeText.textContent = 'Nestled in rolling hills and cradled by ancient wood and billowing purple heath, Aterma is a nice place to have lunch. Join us for a lovely day on the grass with a picnic package of your choice. And bring any extras or compliments you like!';
   welcome.appendChild(welcomeText);
   return welcome;
 };
@@ -50,11 +50,11 @@ const createInfo = () => {
     switch (i) {
       case 0:
         day.textContent = 'M O N';
-        hours.textContent = '5 - 11 P';
+        hours.textContent = '5 - 9 P';
         break;
       case 1:
         day.textContent = 'T U E S';
-        hours.textContent = '5 - 11 P';
+        hours.textContent = '5 - 9 P';
         break;
       case 2:
         day.textContent = 'W E D S';
