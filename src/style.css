@@ -277,6 +277,48 @@ body {
 
 }
 
+/* CONTACT */
+#contact {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100vw;
+}
+
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: clamp(500px, 55vw, 1032px);
+}
+
+#contact-address {
+    display: flex;
+}
+
+#contact-email {
+    display: flex;
+}
+
+#contact-phone {
+    display: flex;
+}
+
+.fa-contact {
+    display: flex;
+    align-items: center;
+}
+
+#map {
+    display: block;
+}
+
+#map-iframe {
+    width: 600px;
+    height: 450px;
+}
+
+
 /* BREAK */
 /* BREAK */
 
