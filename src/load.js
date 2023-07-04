@@ -1,10 +1,6 @@
 import createHome from './home';
 import createMenu from './menu';
 import createContact from './contact';
-// import ghIcon from './images/github.svg';
-// import instaIcon from './images/instagram.svg';
-// import mailIcon from './images/email-outline.svg';
-// import mapsIcon from './images/google-maps.svg';
 
 // Pull our HTML tag into js
 // const content = document.createElement('div');

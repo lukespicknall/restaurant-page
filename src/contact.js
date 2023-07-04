@@ -49,8 +49,7 @@ const createMap = () => {
       allowfullscreen=""
       loading="lazy"
       referrerpolicy="no-referrer-when-downgrade"
-    ></iframe>
-  `;
+    ></iframe>`;
   return map;
 };
 
