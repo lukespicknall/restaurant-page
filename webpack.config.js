@@ -28,6 +28,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./src/template.html",
+      favicon: "./src/images/utensils-solid.svg",
     }),
   ],
 
