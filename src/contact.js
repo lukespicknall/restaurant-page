@@ -1,40 +1,41 @@
 const contactInfo = () => {
-  const cInfo = document.createElement('div');
+  const infoBox = document.createElement('div');
+  infoBox.setAttribute('id', 'info-box');
 
   const contactAddress = document.createElement('div');
-  contactAddress.setAttribute('id', 'contact-address');
+  contactAddress.classList.add('contact-info');
   const addressIcon = document.createElement('i');
   addressIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
   addressIcon.setAttribute('aria-hidden', 'true');
-  const cAddress = document.createElement('p');
-  cAddress.textContent = 'BEEKHUIZENSEWEG 1, 6991 JM RHEDEN, NETHERLANDS';
+  const cAddress = document.createElement('div');
+  cAddress.textContent = 'HEAUVENSEWEG 5A, 6991 JE RHEDEN, NETHERLANDS';
   contactAddress.appendChild(addressIcon);
   contactAddress.appendChild(cAddress);
-  cInfo.appendChild(contactAddress);
+  infoBox.appendChild(contactAddress);
 
   const contactEmail = document.createElement('div');
-  contactEmail.setAttribute('id', 'contact-email');
+  contactEmail.classList.add('contact-info');
   const emailIcon = document.createElement('i');
-  emailIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
+  emailIcon.classList.add('fa-regular', 'fa-envelope', 'fa-contact');
   emailIcon.setAttribute('aria-hidden', 'true');
-  const cEmail = document.createElement('p');
-  cEmail.textContent = 'info@aterma.nd';
+  const cEmail = document.createElement('div');
+  cEmail.textContent = 'info@aterma.nl';
   contactEmail.appendChild(emailIcon);
   contactEmail.appendChild(cEmail);
-  cInfo.appendChild(contactEmail);
+  infoBox.appendChild(contactEmail);
 
   const contactPhone = document.createElement('div');
-  contactPhone.setAttribute('id', 'contact-phone');
+  contactPhone.classList.add('contact-info');
   const phoneIcon = document.createElement('i');
-  phoneIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
+  phoneIcon.classList.add('fa-solid', 'fa-phone-volume', 'fa-contact');
   phoneIcon.setAttribute('aria-hidden', 'true');
-  const cPhone = document.createElement('p');
-  cPhone.textContent = '+88 44512356548';
+  const cPhone = document.createElement('div');
+  cPhone.textContent = '+31 123 4567';
   contactPhone.appendChild(phoneIcon);
   contactPhone.appendChild(cPhone);
-  cInfo.appendChild(contactPhone);
+  infoBox.appendChild(contactPhone);
 
-  return cInfo;
+  return infoBox;
 };
 
 const createMap = () => {
@@ -42,7 +43,7 @@ const createMap = () => {
   map.setAttribute('id', 'map');
   map.innerHTML = `
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d39279.356032107346!2d6.0105784!3d52.0258309!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7a32f28f0088f%3A0x905369d96e245648!2sPavilion%20De%20Posbank!5e0!3m2!1sen!2sus!4v1688421220756!5m2!1sen!2sus"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56045.37126845338!2d5.978342553164783!3d52.04259074290867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c7bcc9278a0a47%3A0x46a1476b7999402f!2sNationaal%20Park%20Veluwezoom!5e0!3m2!1sen!2sus!4v1688510380758!5m2!1sen!2sus"
       id="map-iframe"
       style="border:0;"
       allowfullscreen=""

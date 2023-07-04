@@ -41,7 +41,7 @@ const createInfo = () => {
   info.setAttribute('id', 'info');
   address.setAttribute('id', 'address');
   schedule.setAttribute('id', 'schedule');
-  address.textContent = 'BEEKHUIZENSEWEG 1, 6991 JM RHEDEN, NETHERLANDS';
+  address.textContent = 'HEAUVENSEWEG 5A, 6991 JE RHEDEN, NETHERLANDS';
   for (let i = 0; i < 7; i += 1) {
     const day = document.createElement('div');
     const hours = document.createElement('div');

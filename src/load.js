@@ -98,7 +98,7 @@ const createFooter = () => {
   mapLink.setAttribute('aria-regular', 'true');
   const mapShell = document.createElement('a');
   mapShell.setAttribute('target', 'blank');
-  mapShell.href = 'https://www.google.com/maps/place/Pavilion+De+Posbank/@52.0258309,6.0105784,13.09z/data=!4m14!1m7!3m6!1s0x47c7bcc9278a0a47:0x46a1476b7999402f!2sNationaal+Park+Veluwezoom!8m2!3d52.0483103!4d6.0198869!16s%2Fm%2F05m_gqg!3m5!1s0x47c7a32f28f0088f:0x905369d96e245648!8m2!3d52.029418!4d6.021811!16s%2Fg%2F1tgm22gt?entry=ttu';
+  mapShell.href = 'https://www.google.com/maps/place/Nationaal+Park+Veluwezoom/@52.0473761,6.0054257,14z/data=!4m6!3m5!1s0x47c7bcc9278a0a47:0x46a1476b7999402f!8m2!3d52.0483103!4d6.0198869!16s%2Fm%2F05m_gqg?entry=ttu';
   mapShell.appendChild(mapLink);
   socials.appendChild(mapShell);
 
