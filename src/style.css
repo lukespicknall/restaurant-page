@@ -310,11 +310,12 @@ body {
 }
 
 #map {
-    display: block;
+    display: flex;
+    justify-content: center;
 }
 
 #map-iframe {
-    width: 600px;
+    width: clamp(320px, 55vw, 700px);
     height: 450px;
 }
 

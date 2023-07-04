@@ -1,4 +1,6 @@
 const contactInfo = () => {
+  const cInfo = document.createElement('div');
+
   const contactAddress = document.createElement('div');
   contactAddress.setAttribute('id', 'contact-address');
   const addressIcon = document.createElement('i');
@@ -8,28 +10,31 @@ const contactInfo = () => {
   cAddress.textContent = 'BEEKHUIZENSEWEG 1, 6991 JM RHEDEN, NETHERLANDS';
   contactAddress.appendChild(addressIcon);
   contactAddress.appendChild(cAddress);
+  cInfo.appendChild(contactAddress);
 
-  // const contactEmail = document.createElement('div');
-  // contactEmail.setAttribute('id', 'contact-email');
-  // const emailIcon = document.createElement('i');
-  // emailIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
-  // emailIcon.setAttribute('aria-hidden', 'true');
-  // const cEmail = document.createElement('p');
-  // cEmail.textContent = 'info@aterma.nd';
-  // contactEmail.appendChild(emailIcon);
-  // contactEmail.appendChild(cEmail);
+  const contactEmail = document.createElement('div');
+  contactEmail.setAttribute('id', 'contact-email');
+  const emailIcon = document.createElement('i');
+  emailIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
+  emailIcon.setAttribute('aria-hidden', 'true');
+  const cEmail = document.createElement('p');
+  cEmail.textContent = 'info@aterma.nd';
+  contactEmail.appendChild(emailIcon);
+  contactEmail.appendChild(cEmail);
+  cInfo.appendChild(contactEmail);
 
-  // const contactPhone = document.createElement('div');
-  // contactPhone.setAttribute('id', 'contact-phone');
-  // const phoneIcon = document.createElement('i');
-  // phoneIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
-  // phoneIcon.setAttribute('aria-hidden', 'true');
-  // const cPhone = document.createElement('p');
-  // cPhone.textContent = '+88 44512356548';
-  // contactPhone.appendChild(phoneIcon);
-  // contactPhone.appendChild(cPhone);
+  const contactPhone = document.createElement('div');
+  contactPhone.setAttribute('id', 'contact-phone');
+  const phoneIcon = document.createElement('i');
+  phoneIcon.classList.add('fa', 'fa-location-dot', 'fa-contact');
+  phoneIcon.setAttribute('aria-hidden', 'true');
+  const cPhone = document.createElement('p');
+  cPhone.textContent = '+88 44512356548';
+  contactPhone.appendChild(phoneIcon);
+  contactPhone.appendChild(cPhone);
+  cInfo.appendChild(contactPhone);
 
-  return contactAddress;
+  return cInfo;
 };
 
 const createMap = () => {
